@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, sans-serif;
     padding: 0;
     margin: 0;
     display: flex;
@@ -41,7 +41,14 @@ body {
 /* header elements */
 
 .header-top {
-    height: 50px;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bottom {
+    height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,13 +58,14 @@ body {
     color: #F9FAF8;
 }
 
-a, .hero-secondary, .sign-up1 {
+a, .hero-secondary, .sign-up1, .placeholder {
     color: #E5E7EB;
     font-size: 18px;
 }
 
 .logo {
     font-size: 24px;
+    font-weight: bold;
     display: flex;
     flex-basis: 445px;
 }
@@ -79,16 +87,23 @@ a {
     flex-basis: 445px;
 }
 
-.header-bottom {
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .box1 {
     height: 225px;
     flex-basis: 445px;
+    gap: 4px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.box2 {
+    background-color: #53565e;
+    height: 225px;
+    flex-basis: 445px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-main {
@@ -96,17 +111,11 @@ a {
     font-weight: bolder;
 }
 
-.box2 {
-    background-color: #53565e;
-    height: 225px;
-    flex-basis: 445px;
-}
-
 .sign-up1 {
     background-color: #3882F6;
     font-weight: bold;
     border-radius: 5px;
     padding: 5px 20px;
-    margin-top: 7px;
+    margin-top: 10px;
     border-style: none;
 }
