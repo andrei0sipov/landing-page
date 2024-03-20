@@ -11,6 +11,7 @@ body {
 }
 
 .header {
+    position: relative;
     background-color: #1F2937;
     width: 100%;
     height: 60px;
@@ -22,6 +23,7 @@ body {
 .content {
     width: 100%;
     height: 2000px;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
 }
@@ -60,11 +62,14 @@ body {
 }
 
 .footer {
+    position: relative;
     background-color: #1F2937;
     width: 100%;
-    height: 60px;
+    height: 90px;
     align-self: flex-end;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* header elements */
@@ -73,7 +78,7 @@ body {
     color: #F9FAF8;
 }
 
-a, .hero-secondary, .placeholder {
+a, .hero-secondary, .placeholder, .copyright {
     color: #E5E7EB;
     font-size: 18px;
 }
@@ -188,4 +193,13 @@ p {
     border-color: #E5E7EB;
     border-width: 2px;
     border-style: double;
+}
+
+button {
+    transition-duration: 0.4s;
+  }
+  
+button:hover {
+    background-color: #E5E7EB;
+    color: #3882F6;
 }
