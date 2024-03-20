@@ -87,7 +87,7 @@ a, .hero-secondary, .placeholder, .copyright {
     font-size: 24px;
     font-weight: bold;
     display: flex;
-    flex-basis: 445px;
+    flex-basis: 500px;
 }
 
 ul {
@@ -104,12 +104,14 @@ a {
 .links {
     display: flex;
     justify-content: flex-end;
-    flex-basis: 445px;
+    flex-basis: 500px;
 }
 
 .box1 {
+    box-sizing: border-box;
     height: 225px;
-    flex-basis: 445px;
+    flex-basis: 500px;
+    padding-right: 50px;
     gap: 4px;
     display: flex;
     flex-flow: column wrap;
@@ -120,7 +122,7 @@ a {
 .box2 {
     background-color: #53565e;
     height: 225px;
-    flex-basis: 445px;
+    flex-basis: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +166,7 @@ a {
 /* action elements */
 
 .action-box {
-    flex-basis: 890px;
+    flex-basis: 1000px;
     height: 125px;
     background-color: #3882F6;
     border-radius: 7px;
@@ -195,10 +197,12 @@ p {
     border-style: double;
 }
 
+/* button effects */
+
 button {
     transition-duration: 0.4s;
   }
-  
+
 button:hover {
     background-color: #E5E7EB;
     color: #3882F6;
