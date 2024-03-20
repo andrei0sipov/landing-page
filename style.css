@@ -10,7 +10,7 @@ body {
     flex-flow: row wrap;
 }
 
-.header-top {
+.header {
     background-color: #1F2937;
     width: 100%;
     height: 60px;
@@ -26,10 +26,10 @@ body {
     flex-flow: row wrap;
 }
 
-.header {
+.hero {
     background-color: #1F2937;
     width: 100%;
-    height: 25%;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,19 +38,25 @@ body {
 .info {
     background-color: white;
     width: 100%;
-    height: 25%;
+    height: 30%;
 }
 
 .quote {
     background-color: #E5E7EB;
     width: 100%;
     height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .action {
     background-color: white;
     width: 100%;
-    height: 25%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -58,6 +64,7 @@ body {
     width: 100%;
     height: 60px;
     align-self: flex-end;
+    display: flex;
 }
 
 /* header elements */
@@ -66,7 +73,7 @@ body {
     color: #F9FAF8;
 }
 
-a, .hero-secondary, .sign-up1, .placeholder {
+a, .hero-secondary, .placeholder {
     color: #E5E7EB;
     font-size: 18px;
 }
@@ -122,8 +129,63 @@ a {
 .sign-up1 {
     background-color: #3882F6;
     font-weight: bold;
-    border-radius: 5px;
-    padding: 5px 20px;
+    color: #E5E7EB;
+    border-radius: 7px;
+    padding: 7px 25px;
     margin-top: 10px;
     border-style: none;
+}
+
+/* quote elements */
+
+.quote-box {
+    display: flex;
+    flex-direction: column;
+    width: 815px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.credit {
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* action elements */
+
+.action-box {
+    flex-basis: 890px;
+    height: 125px;
+    background-color: #3882F6;
+    border-radius: 7px;
+    border-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+    color: #E5E7EB;
+}
+
+.call {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sign-up2 {
+    background-color: #3882F6;
+    font-weight: bold;
+    color: #E5E7EB;
+    border-radius: 7px;
+    padding: 6px 24px;
+    border-color: #E5E7EB;
+    border-width: 2px;
+    border-style: double;
 }
