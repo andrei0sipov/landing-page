@@ -41,6 +41,10 @@ body {
     background-color: white;
     width: 100%;
     height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .quote {
@@ -143,6 +147,43 @@ a {
     border-style: none;
 }
 
+/*info elements */
+
+.info-title {
+    color: #1F2937;
+    font-weight: bolder;
+    font-size: 36px;
+    padding: 75px;
+}
+
+.info-container {
+    gap: 50px;
+    display: flex;
+}
+
+.square-text {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-square {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: #3882F6;
+    border-width: 2px;
+}
+
+.info-text {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
 /* quote elements */
 
 .quote-box {
@@ -193,8 +234,8 @@ p {
     border-radius: 7px;
     padding: 6px 24px;
     border-color: #E5E7EB;
-    border-width: 2px;
-    border-style: double;
+    border-width: 1px;
+    border-style: solid;
 }
 
 /* button effects */
